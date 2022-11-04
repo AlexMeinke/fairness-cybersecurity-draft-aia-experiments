@@ -1,0 +1,16 @@
+# @package _global_ 
+
+
+train:
+  train_type: adversarial
+  
+  threat_model: Linf # Linf, L2, L1
+  
+  schedule:   
+    eps_schedule_type: constant
+    eps_schedule: [0.003]
+    eps_schedule_epochs: [100]
+    
+    # lr_schedule_type: constant
+    # lr_schedule: [0.1, 0.01, 0.001, .0001]
+    # lr_schedule_epochs: [3, 5, 8, 10]
