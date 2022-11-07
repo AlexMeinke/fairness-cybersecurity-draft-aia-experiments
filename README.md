@@ -14,7 +14,8 @@ We train different neural networks in order to illustrate that these desirable p
 In the plot below you can see different models' accuracy and either fairness or adversarial robustness (with respect to $l_\infty$-threat at $\epsilon=0.01$).
 The empirical Pareto-surface is drawn as the blue line.
 
-Fairness                   |  Robustness
+
+Accuracy-vs-Fairness Trade-Offs                   |  Accuracy-vs-Cybersecurity Trade-Offs
 :-------------------------:|:-------------------------:
 ![](imgs/fairness_frontier.png)  |  ![](imgs/robustness_frontier.png)
 
