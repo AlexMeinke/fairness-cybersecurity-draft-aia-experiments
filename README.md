@@ -27,7 +27,7 @@ In the plot below Pareto-efficient models are shown in orange and dominated mode
 </p>
 
 
-# Dataset
+## Dataset
 In order to avoid ethical and data protection issues in using and publishing real data containing hiring information of actual job applicants,
 we rather use an existing dataset of photos of faces to which we assign synthetically generated labels. 
 The dataset is [CelebA](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) which we downscale to a resolution of 64x64 in order to speed up the experiments involving adversarial training.
@@ -37,7 +37,7 @@ Applying a sigmoid to this score yields the ground-truth probability that a give
 A fixed randomization seed is used in order to ensure consistent evaluations.
 More details can be found in the function ```getloader_celebA``` in ```utils/dataloaders/dataloading.py```.
 
-# Training Models
+## Training Models
 
 Before training models, you should set the path to your celebA directory in ```paths_config.py```. 
 After that, training is simply done by running ```python train.py```. 
@@ -45,3 +45,10 @@ Note that the code uses [Hydra](https://hydra.cc/) for its configuration managem
 After training, models get pushed into a [local database](https://tinydb.readthedocs.io/en/latest/) under ```evals/CelebA.json``` where both training parameters and evaluation results are stored.
 This database also keeps a reference to where the model weights are stored at the end of training so it is easy to load models via ```utils.model_zoo.from_database```.
 
+Evaluations are run automatically at the end of training. However, you can manually rerun it using ```gen_eval.py```.
+
+
+## Generating Plots
+
+Once enough models (with different hyperparameters) are trained, stored in the ```evals/CelebA.json``` and evaluated, 
+the plots can be recreated using the Jupyter Notebook ```GeneratePlots.ipynb```.
