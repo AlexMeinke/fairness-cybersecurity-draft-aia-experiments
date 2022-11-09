@@ -1,8 +1,8 @@
 # Illustrations for Trade-Offs in Fairness and Cybersecurity of AI
 
-This repo contains code that was used to generate figures in the paper "Improving the fairness and cybersecurity of the Artificial Intelligence Act". 
-The basic idea is to illustrate trade-offs that occur between accuracy and both fairness and AI-specific cybersecurity. 
-The task that our AI is tasked with solving is scoring job applicants based on a photo.
+This repo contains code that was used to generate figures in the paper "Improving fairness and cybersecurity in the Artificial Intelligence Act". 
+The basic idea is to illustrate trade-offs that occur between accuracy and both AI-fairness and AI-specific cybersecurity. 
+The task that our AI is tasked with solving is scoring job applicants based on their photos.
 According to the [EU's draft Artificial Intelligence Act](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A52021PC0206) this qualifies as a "high-risk" application of AI.
 For fairness, we focus on assessing gender bias in the system by measuring the difference in false negative rates between male and female applicants.
 We use the example of adversarial robustness as a cybersecurity theat of interest because adversarial attacks constitute a relevant subset of AI-specific cybersecurity threats that is explicitly mentioned by the draft AIA.
