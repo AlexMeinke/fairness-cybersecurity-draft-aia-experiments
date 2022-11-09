@@ -41,7 +41,7 @@ More details can be found in the function ```getloader_celebA``` in ```utils/dat
 
 Before training models, you should set the path to your celebA directory in ```paths_config.py```. 
 After that, training is simply done by running ```python train.py```. 
-Note that the code uses [Hydra](https://hydra.cc/) for its configuration management, so when modifying training parameters it is recommended to do so in ```config/*.yml``` files.
+Note that the code uses [Hydra](https://hydra.cc/) for its configuration management, so when modifying training parameters it is recommended to do so in ```config/*.yaml``` files.
 After training, models get pushed into a [local database](https://tinydb.readthedocs.io/en/latest/) under ```evals/CelebA.json``` where both training parameters and evaluation results are stored.
 This database also keeps a reference to where the model weights are stored at the end of training so it is easy to load models via ```utils.model_zoo.from_database```.
 
