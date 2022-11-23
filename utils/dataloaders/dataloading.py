@@ -6,7 +6,7 @@ import paths_config
 import numpy as np
 import warnings
 
-from .tiny_utils.tinyimages_80mn_loader import TinyImages
+# from .tiny_utils.tinyimages_80mn_loader import TinyImages
 import utils.dataloaders.noisefunctions as noisefunctions
 from .auto_augment import AutoAugment
 import utils.dataloaders.imagenet_subsets as imgnet
